@@ -1,0 +1,30 @@
+{
+  "name": "axios-curlirize2",
+  "version": "2.0.0",
+  "description": "Fork axios-curlirize with fix some bugs.",
+  "source": "src/axios-curlirize2.ts",
+  "main": "dist/axios-curlirize2.js",
+  "module": "dist/axios-curlirize2.module.js",
+  "unpkg": "dist/axios-curlirize2.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [
+    "axios-curlirize2",
+    "axios",
+    "curl",
+    "debug"
+  ],
+  "author": "avevlad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avevlad/axios-curlirize2/issues"
+  },
+  "homepage": "https://github.com/avevlad/axios-curlirize2#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "microbundle": "^0.12.0"
+  }
+}
