@@ -1,15 +1,17 @@
 name: Node.js CI
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - "**"
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [10.x, 12.x]
 
     steps:
       - uses: actions/checkout@v2
