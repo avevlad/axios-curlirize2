@@ -1,6 +1,6 @@
 {
   "name": "axios-curlirize2",
-  "version": "2.0.0",
+  "version": "2.0.6",
   "description": "Fork axios-curlirize with fix some bugs.",
   "source": "src/axios-curlirize2.ts",
   "main": "dist/axios-curlirize2.js",
@@ -10,6 +10,10 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "keywords": [
     "axios-curlirize2",
     "axios",
