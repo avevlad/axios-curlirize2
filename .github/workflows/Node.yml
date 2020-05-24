@@ -41,5 +41,5 @@ jobs:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
       - name: is condition
-        if: contains(${{github.ref}}, 'tags')
+        if: contains(github.ref, 'tags')
         run: echo 123
