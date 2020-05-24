@@ -1,9 +1,11 @@
 name: Node.js CI
 
-on:
-  push:
-    tags:
-      - "**"
+# on:
+#   push:
+#     tags:
+#       - "**"
+
+on: push
 
 jobs:
   build:
@@ -11,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -19,5 +21,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
+      - run: echo ${{github.ref}}
+      - run: echo ${{github.repository}}
+      - run: echo ${{github.event_name}}
       - run: yarn install
       - run: yarn build
