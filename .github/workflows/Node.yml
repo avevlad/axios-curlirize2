@@ -21,9 +21,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: echo ${{github.ref}}
+      - run: echo toJson(github)
       - run: echo ${{github.ref}}
       - run: echo ${{github.repository}}
       - run: echo ${{github.event_name}}
+        if: ${{ <expression> }}
       - run: yarn install
       - run: yarn build
