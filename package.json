@@ -28,7 +28,7 @@
   "homepage": "https://github.com/avevlad/axios-curlirize2#readme",
   "dependencies": {},
   "devDependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "microbundle": "^0.12.0"
   }
 }
